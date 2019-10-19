@@ -3,11 +3,15 @@ package cn.xiuminglee.bootjfx;
 import javafx.application.Application;
 import javafx.application.HostServices;
 import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
+import org.springframework.core.io.ClassPathResource;
 
 /**
  * @Author: Xiuming Lee
@@ -35,9 +39,11 @@ public class JavaFxApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(new ClassPathResource("/fxml/scene.fxml").getURL());
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(new ClassPathResource("/css/styles.css").getURL().toExternalForm());
         primaryStage.setTitle("Spring Boot and JavaFX");
-        primaryStage.setWidth(800);
-        primaryStage.setHeight(800);
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
