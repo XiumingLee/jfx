@@ -17,7 +17,7 @@ import org.springframework.core.io.ClassPathResource;
  * @Author: Xiuming Lee
  * @Date: 2019/10/19 12:50
  * @Version 1.0
- * @Describe: JavaFX的主类
+ * @Describe: JavaFX的主类，可将此类抽出为抽象类。
  */
 public class JavaFxApp extends Application {
     private ConfigurableApplicationContext context;
