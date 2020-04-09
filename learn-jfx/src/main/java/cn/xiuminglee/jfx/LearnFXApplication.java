@@ -1,6 +1,6 @@
 package cn.xiuminglee.jfx;
 
-import cn.xiuminglee.jfx.ImageDemo.ImageDemo002;
+import cn.xiuminglee.jfx.OtherDemo.DynamicReadFxml;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -12,7 +12,7 @@ public class LearnFXApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage = new ImageDemo002();
+        primaryStage = new DynamicReadFxml();
         primaryStage.show();
     }
 }
