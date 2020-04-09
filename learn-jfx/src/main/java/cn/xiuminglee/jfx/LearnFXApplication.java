@@ -1,6 +1,6 @@
 package cn.xiuminglee.jfx;
 
-import cn.xiuminglee.jfx.OtherDemo.DynamicReadFxml;
+import cn.xiuminglee.jfx.controls.ChoiceBoxDemo;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -12,7 +12,7 @@ public class LearnFXApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage = new DynamicReadFxml();
+        primaryStage = new ChoiceBoxDemo();
         primaryStage.show();
     }
 }
