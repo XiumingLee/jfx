@@ -1,4 +1,4 @@
-package cn.xiuminglee.jfx.ImageDemo;
+package cn.xiuminglee.jfx.image;
 
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.Scene;
