@@ -1,4 +1,4 @@
-package cn.xiuminglee.jfx.OtherDemo;
+package cn.xiuminglee.jfx.other;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

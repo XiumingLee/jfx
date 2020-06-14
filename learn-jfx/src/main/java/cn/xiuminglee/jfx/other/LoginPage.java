@@ -1,4 +1,4 @@
-package cn.xiuminglee.jfx.OtherDemo;
+package cn.xiuminglee.jfx.other;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
